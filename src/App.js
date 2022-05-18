@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import pizzaimage from "./pizza.png";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <div className="container-image">
+          <img src={pizzaimage} alt="#" />
+          <h1>Pizza Calculator App</h1>
+        </div>
+        <div className="container-inputs">
+          <h1>1 pizza needed</h1>
+          <label>Number of People</label>
+          <input
+            type="number"
+            min="1"
+            max="50"
+            placeholder="Number of people"
+          />
+          <label>Slices Per Person</label>
+          <input
+            type="number"
+            min="1"
+            max="50"
+            placeholder="Slices Per Person"
+          />
+          <label>Total Slices of Pizza</label>
+          <input
+            type="number"
+            min="1"
+            max="50"
+            placeholder="Total Slices of Pizza"
+          />
+        </div>
+      </div>
     </div>
   );
 }
