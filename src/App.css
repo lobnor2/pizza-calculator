@@ -30,7 +30,7 @@ h1 {
   align-items: center;
   padding: 16px 0;
   width: 600px;
-  border: 1px solid #dedede;
+  border: 1px solid #848484;
   border-radius: 5px;
   height: 500px;
   text-align: center;
@@ -39,12 +39,68 @@ h1 {
 input {
   width: 80%;
   padding: 10px;
-  margin: 10px 0;
   font-size: 19px;
+  margin-bottom: 25px;
+  color: #848484;
+
 
 }
+
 label {
   font-size: 20px;
-  margin: 10px 0;
+  margin: 7px 0;
+  color: #848484;
+  /* text-align: left; */
+  
+}
+.h1class {
+  text-align: center;
+  font-size: 50px;
+  /* border: 1px solid black; */
+  margin: 10px;
+  margin-bottom: -50px;
+  margin-top: 20px;
+  
+}
+
+
+@media screen and (max-width:600px) {
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .h1class {
+    font-size: 30px;
+  }
+  img {
+    width: 200px;
+    height: 200px;
+    margin-top:80px ;
+    margin-bottom: 30px;
+  }
+  .container-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0;
+    width: 400px;
+    border: 1px solid #848484;
+    border-radius: 5px;
+    height: 500px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  input {
+    width: 80%;
+    padding: 10px;
+    font-size: 19px;
+    margin-bottom: 25px;
+    color: #848484;
+  
+  
+  }
 
 }
